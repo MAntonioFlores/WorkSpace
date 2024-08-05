@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Float</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial;
+        }
+        .main{
+            background: green;
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+            overflow: hidden;
+        }
+        .caja{
+            width: 500px;
+            height: 200px;
+            margin: 20px;
+        }
+        .img{
+            float: left;
+            width: auto;
+        }
+        .text{
+            float: left;
+        }
+
+        /*Estilos para articulos*/
+        .articulo{
+            background: #0606c0d0;
+            width: 500px;
+            margin: auto;
+            padding: 10px;
+        }   
+        .articulo h2{
+            padding: 10px;
+            text-align: center;
+        }
+        .articulo img{
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <div class="caja img">
+            <img src="https://loremflickr.com/g/320/240/paris" height="200">
+        </div>
+        <div class="caja text">
+            <h2>Soy un Encabezado</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aperiam eos odit corporis tempore
+                magni quae, sunt aut praesentium, hic suscipit cumque delectus? Beatae, modi cum. Esse laborum
+                voluptatum perferendis?
+            </p>
+        </div>
+    </main>
+    <article class="articulo">
+        <h2>Encabezado de Articulo</h2>
+        <img src="https://loremflickr.com/g/320/240/paris" width="200">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sequi veritatis totam debitis accusamus
+            minima consequuntur blanditiis quia porro nesciunt explicabo dicta, obcaecati vero aspernatur eveniet soluta
+            impedit recusandae nemo?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad assumenda labore, atque quas non, nisi
+            illum porro architecto tempore velit? Doloremque excepturi eius quas consectetur illo obcaecati, voluptatem
+            voluptatibus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam doloribus excepturi rerum libero eveniet
+            quo, aspernatur, vitae ea velit laudantium eum, nisi unde? Quia, quae! Quidem ipsa aut accusamus assumenda!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, explicabo. Voluptatum ducimus nostrum
+            vitae ipsam veniam fugiat, reiciendis pariatur perferendis laborum, numquam dolorem cumque dolor at dolorum
+            cum similique soluta!
+        </p>
+    </article>
+</body>
+
+</html>

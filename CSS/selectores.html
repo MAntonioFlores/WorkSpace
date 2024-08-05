@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+
+    <style>
+        /* el * representa a todo el body pero le puedes seguir agregando estilos a cada selector*/
+        *{
+            color: blue;
+        }
+        p{
+            color: green;
+        }
+        h1,h2{
+            color: red;
+        }
+        /* el class="p1" o algo asi se representa de la siguiente manera en css, este .p1 hace referencia a la class del p*/
+        .p1{
+            color: darkmagenta
+        }
+        .p2{
+            color: darkgoldenrod;
+        }
+        /*para el id se debe agregar #nombredelid con esto se reconoce en CSS*/
+        #subtitulo{
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+    <h2 id="subtitulo">Segundo Encabezado</h2>
+    <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <p class="p2">Sit animi ratione delectus repudiandae iusto non unde dolores molestiae nobis exercitationem ab.</p>
+</body>
+</html>

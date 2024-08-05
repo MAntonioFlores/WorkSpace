@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Clase</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu {
+            background-color: #13a4a4;
+        }
+
+        .menu-nav {
+            list-style: none;
+        }
+
+        .menu-nav__item {
+            display: inline-block;
+        }
+
+        .menu-nav__item a {
+            color: #ffff;
+            text-decoration: none;
+        }
+
+        /*pseudo clses*/
+        .menu-nav__item a:hover {
+            color: red;
+        }
+
+        .menu-nav__item a:active {
+            color: blueviolet;
+        }
+
+        /*pseudo elementos*/
+        .menu-nav__item a::after {
+            content: " - ";
+        }
+        
+        /*Modelo de caja*/
+        main{
+            width: 100%;
+            height: 300px;
+            border: 10px solid gray;
+            padding: 20px 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="menu-nav__item"><a href="">Inicio</a></li>
+                <li class="menu-nav__item"><a href="">Trabajos</a></li>
+                <li class="menu-nav__item"><a href="">Blogs</a></li>
+                <li class="menu-nav__item"><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Hola Mundo</h1>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores fuga doloremque aspernatur, neque
+                    repudiandae beatae nostrum eaque qui nulla consequuntur rerum incidunt distinctio enim aut commodi
+                    ipsam nesciunt voluptatum ducimus!
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

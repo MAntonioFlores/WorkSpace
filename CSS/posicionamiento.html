@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamieno</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /*El float nos permite cambiar la posicion de un elemento de horizontal a vertical con left o right o top y buttom funciona como un espejo masomenos*/
+        .caja {
+            background: #0e6ab8;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            /* float: right; */
+        }
+
+        /*Cuando la propiedad position es relative se puede mover a cualquier parte left top right o botttom pero deja el espacio donde estaba*/
+        /*Cuando es abosute el espacio anterior que ocupaba va a ser remplazado por los demas elementos*/
+        /*Cuando es Fixed quere decir que es fija por lo que si scroleas se manendra este elemnto estatico*/
+        /*La caja padre actua como un contenedor que contiene a la caja position y esta caja solamente se puede mover dentro de esta caja padre por eso son relativa y absoluta*/
+        .caja-padre{
+            margin: 20px;
+            background: #cf541b;
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+        .position {
+            background: #17ad5d;
+            position: absolute;
+            /* left: 300px;
+            top: 300px; */
+            bottom: 0%;
+            right: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caja"></div>
+    <div class="caja-padre">
+        <div class="caja position"></div>
+    </div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+</body>
+
+</html>
