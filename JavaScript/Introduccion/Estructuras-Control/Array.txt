@@ -1,0 +1,17 @@
+array ["Alex", "Roel", 26, 100];
+
+array[1]//este trae el elemento que se encuentre en el indice 1 que es Roel
+
+array[1] = 'Juan' //Se esutituye Roel por Juan
+
+array.push('Pedro');//Agrega un elementoal array al final para eso es push
+
+array.unshift(200)//con este unshift se agrega al inicio del array
+
+array.pop()//con .pop quitamos el ultimo elemento
+
+array.shift()//quita el primer elemento
+
+array.lenght//nos da la longitud del array
+
+array.indexOf(elemento)//este nos da la posicion de este elemento que etamos buscando
